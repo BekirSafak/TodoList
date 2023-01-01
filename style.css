@@ -8,3 +8,84 @@
     --purple: #8B5CF6;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: #FFF;
+}
+
+/** Header Start */
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    /* Test color. */
+    /* background-color: red; */
+    /* Test color. */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-size: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#form {
+    display: flex;
+}
+
+input,
+button {
+    /*? appearance:; CSS özelliği, işletim sisteminin temasını temel alan UI kontrollerinin yerel görünümünü kontrol etmek için kullanılır . */
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#newGoals {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#newGoals::placeholder {
+    color: var(--gray);
+}
+
+#newGoalsSubmit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    /*? Arka plandaki gradient rengi yazının üstüne geçirmek için kullanıldı. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*? Arka plandaki gradient rengi yazının üstüne geçirmek için kullanıldı. */
+    cursor: pointer;
+    transition: .4s;
+}
+
+#newGoalsSubmit:hover {
+    opacity: .8;
+}
+
+#newGoalsSubmit:active {
+    opacity: .6;
+}
+
+/** Header End */
