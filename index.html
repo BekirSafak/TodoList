@@ -5,11 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2023 Hedef Listesi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <h1>2023 Hedef Listesi</h1>
+        <form id="form">
+            <input type="text" id="newGoals" placeholder="Yeni hedeflerin neler?">
+            <input type="submit" id="newGoalsSubmit" value="Hedef Ekle">
+        </form>
+    </header>
 
+    <main>
+        <section class="goalsList">
+            <h2>Hedefler</h2>
+
+            <div id="goals">
+                <div class="goal">
+                    <div class="content">
+                        <input type="text" class="text" value="My shiny goal" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Düzenle</button>
+                        <button class="delete">Sil</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
