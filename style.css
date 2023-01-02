@@ -89,3 +89,77 @@ button {
 }
 
 /** Header End */
+
+/** Main Start */
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.goalsList {
+    padding: 1rem;
+}
+
+.goalsList h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#goals .goal {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#goals .goal .content .text {
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: .4s;
+}
+
+#goals .goal .content .text:not(:read-only) {
+    color: var(--pink);
+}
+
+#goals .goal .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.goal .actions button {
+    cursor: pointer;
+    margin: 0 .5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.goal .actions button:hover {
+    opacity: .8;
+}
+
+.goal .actions button:active {
+    opacity: .6;
+}
+
+.goal .actions .edit {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.goal .actions .delete {
+    color: crimson;
+}
+
+/** Main Start */
