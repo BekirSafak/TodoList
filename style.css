@@ -118,6 +118,11 @@ main {
     margin-bottom: 1rem;
 }
 
+#goals .goal .content {
+    /*? Listeye eklenen uzun yazıların input alanına tam sıgması için yazıldı.  */
+    flex: 1 1 0%;
+}
+
 #goals .goal .content .text {
     color: var(--light);
     font-size: 1.125rem;
